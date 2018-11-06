@@ -59,6 +59,7 @@
           position: fixed;          
           transform: translate(-50%, -50%);
           border-radius: 8px;
+          margin: 0 auto !important;
         }
         .modalImg {
           width: 98vw !important; height: auto !important;
@@ -74,6 +75,8 @@
           width: 100%;
           border-top-left-radius: 8px;
           border-top-right-radius: 8px;
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;
         }
       }
         .thisModal {       
@@ -106,6 +109,10 @@
           color: #fed136 !important;
           font-weight: 600;
           text-decoration: underline solid !important;
+        }
+        .modal-backdrop {
+          background-color: black !important;
+          opacity: .7 !important;
         }
     </style>
 
