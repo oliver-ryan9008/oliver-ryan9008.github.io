@@ -127,7 +127,7 @@
       }
       /* iphone x and ipad optimize */
       @media only screen and (min-width: 300px) 
-      and (max-width: 1024px)
+      and (max-width: 1050px)
       and (max-height: 1400px)
       /* and (-webkit-device-pixel-ratio : 3) */
       {
@@ -157,6 +157,22 @@
         .githubLink {
           width: 80vw !important;
           height: auto !important;
+        }
+        .carouselCap {
+          margin-top: -3rem !important; 
+          max-height: 4rem !important;
+        }
+        .captionText {
+          font-size: .8rem !important;
+        }
+        .captionFoot {
+          font-size: .8rem !important;
+          margin: -3rem !important;
+          padding: -3rem !important;
+        }
+        .captionHeader {
+          font-size: .8rem !important;
+          margin: -1rem !important;
         }
       }
     </style>
@@ -424,7 +440,7 @@
           <div class="modal fade" id="projectsModal" tabindex="-1" role="dialog" aria-labelledby="ModalCarouselLabel">
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content thisModal">
-                <h3 class="modalImg modalHead">Click any slide to see <a class="modalHeadOrange" href="https://github.com/oliver-ryan9008" target="_blank">GitHub</a> repository</h3>
+                <!-- <h3 class="modalImg modalHead">Click any slide to see <a class="modalHeadOrange" href="https://github.com/oliver-ryan9008" target="_blank">GitHub</a> repository</h3> -->
                 <div id="carousel-modal-demo" class="carousel slide modalImg" data-ride="carousel">
                   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin: 0 auto !important;">
                     <ol class="carousel-indicators">
@@ -436,16 +452,43 @@
                       <div class="carousel-item active">
                         <a href="https://github.com/oliver-ryan9008/Capstone-Clean-Slate2" target="_blank">
                           <img class="d-block modalImg" src="img/Modals/Capstone/1.png" alt="First slide">
+                          <div class="carousel-caption d-none d-md-block" style="border: solid 1px rgba(27, 95, 142, .5); border-radius: .7rem; background-color: rgba(0, 221, 255, .18); margin-bottom: -1rem;">
+                            <h5 class="captionHead" style="color: black; font-weight: 550;">Capstone Project</h5>
+                            <p class="captionText" style="color: black; font-weight: 550;">This is the EasyPay payroll software prototype that I developed for small business.</p>
+                            <p style="color: black; font-weight: 400;">
+                              <i class="captionFoot">Click image for GitHub repository.</i>
+                            </p>
+                          </div>
                         </a>
                       </div>
                       <div class="carousel-item">
                         <a data-toggle="modal" href="https://github.com/oliver-ryan9008/TrashCollectorTwo" target="_blank">
-                          <img class="d-block modalImg" src="img/Modals/IntegrationProj/1.png" alt="First slide">
+                          <img class="d-block modalImg" src="img/Modals/TrashCollector/1.png" alt="First slide">                          
+                          <div class="carousel-caption d-none d-md-block" style="border: solid 1px rgba(142, 140, 132, .95); border-radius: .7rem; background-color: rgba(142, 140, 132, .85); margin-bottom: -.3rem;">
+                              <h5 class="captionHead" style="color: black; font-weight: 700;">Trash Collector</h5>
+                              <p class="captionText" style="color: black; font-weight: 700;">This is a project I did during my time at devCodeCamp. It is a management system for 
+                                a waste management company to keep track of pickups for specific days and customers to
+                                request pickups and check billing balances.
+                              </p>
+                              <p style="color: rgba(0, 0, 0, 1);">
+                                <i class="captionFoot">Click image for GitHub repository.</i>
+                              </p>
+                            </div>
                         </a>
                       </div>
                       <div class="carousel-item">
                         <a data-toggle="modal" href="https://github.com/estbarajas/group-integration-project" target="_blank">
-                          <img class="d-block modalImg" src="img/Modals/TrashCollector/1.png" alt="First slide">
+                          <img class="d-block modalImg" src="img/Modals/IntegrationProj/1.png" alt="First slide">
+                          <div class="carousel-caption d-none d-md-block" style="border: solid 1px rgba(142, 140, 132, .95); border-radius: .7rem; background-color: rgba(142, 140, 132, .95); margin-bottom: -1rem;">
+                              <h5 class="captionHead" style="color: black; font-weight: 700;">The Italian Eatery</h5>
+                              <p class="captionText" style="color: black; font-weight: 700;">
+                                This was a 5-day group project with four of us to create a food delivery service manager and customer 
+                                ordering system. <br>We used the Google Maps API as well as Stripe, Twilio, and SMTP.
+                              </p>                            
+                              <p style="color: rgba(0, 0, 0, 1);">
+                                <i class="captionFoot">Click image for GitHub repository.</i>
+                              </p>
+                            </div>
                         </a>
                       </div>
                     </div>
