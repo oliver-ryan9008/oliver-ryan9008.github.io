@@ -1,15 +1,36 @@
 module.exports = {
-  env: { browser: true, es2020: true },
+  root: true,
+  env: { browser: true, es2020: true, 'jest/globals': true },
   extends: [
-    'eslint:recommended',
+    'standard-with-typescript',
     'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended',
+    'plugin:jest/recommended',
+    'prettier'
   ],
-  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  settings: { react: { version: '18.2' } },
+  ignorePatterns: ['**/*.scss'],
+  parserOptions: {
+    project: true
+  },
   plugins: ['react-refresh'],
   rules: {
-    'react-refresh/only-export-components': 'warn',
+    '@typescript-eslint/restrict-plus-operands': 'error',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/strict-boolean-expressions': 'off',
+    '@typescript-eslint/promise-function-async': 'off',
+    '@typescript-eslint/no-misused-promises': 'off',
+    '@typescript-eslint/indent': 'off',
+    'react/prop-types': 'off',
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
+    indent: 'off',
+    'multiline-ternary': 'off'
   },
+  globals: {
+    fetch: false
+  },
+  settings: {
+    react: {
+      version: 'detect'
+    }
+  }
 }
