@@ -27,6 +27,6 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": false,
   },
-  "include": ["src", ".eslintrc.cjs"],
+  "include": ["src", ".eslintrc.cjs", "vite.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
