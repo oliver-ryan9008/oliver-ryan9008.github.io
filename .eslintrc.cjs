@@ -21,8 +21,7 @@ module.exports = {
     '@typescript-eslint/indent': 'off',
     'react/prop-types': 'off',
     "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off"
-    indent: 'off',
+    "react/react-in-jsx-scope": "off",
     'multiline-ternary': 'off'
   },
   globals: {
