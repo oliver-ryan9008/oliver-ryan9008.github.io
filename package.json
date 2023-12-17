@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint ./src/*",
     "preview": "vite preview",
-    "homepage": "https://github.com/oliver-ryan9008/portfolio-site.git",
+    "homepage": "https://oliver-ryan9008.github.io/portfolio-site/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
