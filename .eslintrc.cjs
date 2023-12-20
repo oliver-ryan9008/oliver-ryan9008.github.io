@@ -13,6 +13,7 @@ module.exports = {
   },
   plugins: ['react-refresh'],
   rules: {
+    "@typescript-eslint/consistent-type-imports": "off"
     '@typescript-eslint/restrict-plus-operands': 'error',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',
@@ -25,7 +26,7 @@ module.exports = {
     'multiline-ternary': 'off'
   },
   globals: {
-    fetch: false
+    fetch: true
   },
   settings: {
     react: {

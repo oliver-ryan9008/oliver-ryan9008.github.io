@@ -1,4 +1,3 @@
-import React from "react"
 import { name, socialProfiles } from "../../../your_info"
 import Navbar from "../Navbar/Navbar"
 import Typewriter from "../Typewriter/Typewriter"

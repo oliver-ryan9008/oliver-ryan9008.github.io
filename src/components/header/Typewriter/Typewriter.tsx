@@ -3,8 +3,8 @@ import React, { useState, useEffect, useMemo } from "react"
 import { typeWriterText } from "../../../your_info"
 import "./Typewriter.css"
 
-const typing_speed = 200
-const backspace_speed = 100
+const typing_speed = 100
+const backspace_speed = 50
 
 function Typewriter() {
   const [skill, setSkill] = useState("")

@@ -8,7 +8,7 @@ interface IconProps {
   otherProps?: any
 }
 
-export const Icon: React.FC<IconProps> = ({ icon, otherProps }) => {
+export const GenericIcon: React.FC<IconProps> = ({ icon, otherProps }) => {
   return (
     <i>
       <FontAwesomeIcon icon={icon} {...otherProps} />
@@ -20,19 +20,19 @@ export const JSIcon: React.FC = () => {
   const otherProps = {
     title: "Javascript/Typescript",
   }
-  return <Icon icon={faJs} {...otherProps} />
+  return <GenericIcon icon={faJs} {...otherProps} />
 }
 
 export const ReactIcon: React.FC = () => {
   const otherProps = {
     title: "React",
   }
-  return <Icon icon={faReact} {...otherProps} />
+  return <GenericIcon icon={faReact} {...otherProps} />
 }
 
 export const GitIcon: React.FC = () => {
   const otherProps = {
     title: "Git",
   }
-  return <Icon icon={faGit} {...otherProps} />
+  return <GenericIcon icon={faGit} {...otherProps} />
 }
