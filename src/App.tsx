@@ -21,8 +21,8 @@ import { fetchRocketLeague } from "./hooks/fetchRanks"
 function App() {
   const [loading, setLoading] = React.useState(true)
 
-  const [data, setData] = React.useState()
-  const [error, setError] = React.useState(null)
+  const [data, setData] = React.useState<any>({})
+  const [error, setError] = React.useState<any>(null)
 
   const onError = (err?: any) => {
     setError(err)

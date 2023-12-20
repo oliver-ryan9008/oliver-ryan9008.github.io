@@ -30,6 +30,5 @@
     /* Type checking */
     "types": ["vite/client", "node", "jest"],
   },
-  "include": ["src", ".eslintrc.cjs", "vite.config.js", "tsconfig.node.json"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "exclude": ["node_modules", "dist", "./src/assets/**/*"]
 }

@@ -9,11 +9,11 @@ module.exports = {
   ],
   ignorePatterns: ['**/*.scss'],
   parserOptions: {
-    project: true
+    project: './tsconfig.json',
   },
   plugins: ['react-refresh'],
   rules: {
-    "@typescript-eslint/consistent-type-imports": "off"
+    "@typescript-eslint/consistent-type-imports": "off",
     '@typescript-eslint/restrict-plus-operands': 'error',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',

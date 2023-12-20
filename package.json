@@ -7,9 +7,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint ./src/*",
+    "lint": "eslint .",
     "preview": "vite preview",
-    "homepage": "https://oliver-ryan9008.github.io/portfolio-site/",
+    "homepage": "https://oliver-ryan9008.github.io",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
