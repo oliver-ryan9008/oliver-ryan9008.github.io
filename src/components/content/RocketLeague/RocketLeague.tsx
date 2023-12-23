@@ -1,19 +1,39 @@
-// import React from "react"
+import React from "react"
+import { fetchRocketLeague } from "../../../hooks/fetchRanks"
 
-// const RocketLeague = () => {
-//   const [ranks, setRanks] = React.useState([])
-//   const data = useFetchRanks()
+const RocketLeague = ({ loading, setLoading }) => {
+  const [data, setData] = React.useState<any>(undefined)
+  const [error, setError] = React.useState<any>(undefined)
+  // const [loading, setLoading] = React.useState(true)
 
-//   const handleLoad = async () => {
-//     const ranks = await data
-//     setRanks(ranks)
-//   }
+  const handleLoad = async () => {
+    await fetchRocketLeague()
+      .then((data) => {
+        setData(data)
+        setLoading(false)
+      })
+      .catch((err) => {
+        setError(err)
+        setLoading(false)
+      })
+  }
 
-//   React.useEffect(() => {
-//     handleLoad()
-//   }, [data])
+  React.useEffect(() => {
+    if (loading || data || error) return
 
-//   return <div>{ranks}</div>
-// }
+    setLoading(true)
+    void handleLoad()
+  }, [loading, data, error])
 
-// export default RocketLeague
+  if (error) {
+    return <div>{error}</div>
+  }
+
+  if (loading || !data) {
+    return null
+  }
+
+  return <div>{data?.rank}</div>
+}
+
+export default RocketLeague

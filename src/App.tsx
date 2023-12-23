@@ -15,38 +15,13 @@ import AboutMe from "./components/footer/AboutMe/AboutMe"
 import Spinner from "./components/utility/Spinner/Spinner"
 import { name } from "./your_info"
 import ScrollToTopButton from "./components/utility/ScrollToTopButton/ScrollToTopButton"
-// import RocketLeague from "./components/content/RocketLeague/RocketLeague"
-import { fetchRocketLeague } from "./hooks/fetchRanks"
+import RocketLeague from "./components/content/RocketLeague/RocketLeague"
+import Loading from "./components/loading/Loading"
+// import { fetchRocketLeague } from "./hooks/fetchRanks"
 
 function App() {
   const [loading, setLoading] = React.useState(true)
-
-  const [data, setData] = React.useState<any>({})
-  const [error, setError] = React.useState<any>(null)
-
-  const onError = (err?: any) => {
-    setError(err)
-  }
-
-  const onSuccess = (res?: any) => {
-    setData(res)
-  }
-
-  React.useEffect(() => {
-    if (!loading) return
-
-    fetchRocketLeague(onSuccess, onError)
-  }, [loading])
-
-  React.useEffect(() => {
-    if (error) {
-      alert(error)
-    }
-
-    if (data) {
-      console.log(data)
-    }
-  }, [data, error])
+  const [ranksLoading, setRanksLoading] = React.useState(false)
 
   React.useEffect(() => {
     document.title = `${name.firstname} ${name.lastname}`
@@ -54,6 +29,10 @@ function App() {
       setLoading(false)
     }, 800)
   }, [])
+
+  if (!loading && ranksLoading) {
+    return <Loading />
+  }
 
   return (
     <>
@@ -67,7 +46,7 @@ function App() {
           <Achievement />
           {/* <Projects /> */}
           <AboutMe />
-          {/* <RocketLeague /> */}
+          <RocketLeague loading={ranksLoading} setLoading={setRanksLoading} />
         </>
       )}
     </>
