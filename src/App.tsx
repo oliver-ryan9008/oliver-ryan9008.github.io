@@ -21,7 +21,7 @@ import Loading from "./components/loading/Loading"
 
 function App() {
   const [loading, setLoading] = React.useState(true)
-  const [ranksLoading, setRanksLoading] = React.useState(false)
+  // const [ranksLoading, setRanksLoading] = React.useState(false)
 
   React.useEffect(() => {
     document.title = `${name.firstname} ${name.lastname}`
@@ -30,9 +30,9 @@ function App() {
     }, 800)
   }, [])
 
-  if (!loading && ranksLoading) {
-    return <Loading />
-  }
+  // if (!loading) {
+  //   return <Loading />
+  // }
 
   return (
     <>
@@ -46,7 +46,7 @@ function App() {
           <Achievement />
           {/* <Projects /> */}
           <AboutMe />
-          <RocketLeague loading={ranksLoading} setLoading={setRanksLoading} />
+          <RocketLeague />
         </>
       )}
     </>

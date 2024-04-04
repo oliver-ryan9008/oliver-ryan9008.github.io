@@ -1,0 +1,135 @@
+.h-14 {
+  height: 3.5rem;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
+.rank-box {
+  line-height: 1.15;
+  color: var(--color-text-primary);
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", Segoe UI Symbol;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0 1rem 1rem;
+}
+
+.peak-rating__stat {
+  line-height: 1.15;
+  color: var(--color-text-primary);
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", Segoe UI Symbol;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.wrapper {
+  line-height: 1.15;
+  color: var(--color-text-primary);
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", Segoe UI Symbol;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.numbers {
+  line-height: 1.15;
+  color: var(--color-text-primary);
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", Segoe UI Symbol;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-self: center;
+  overflow: hidden;
+}
+
+.name {
+  line-height: 1.15;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", Segoe UI Symbol;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.value {
+  line-height: 1.15;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", Segoe UI Symbol;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 1.25rem;
+  font-weight: 700;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #000000;
+}
+
+.bottom {
+  line-height: 1.15;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", Segoe UI Symbol;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  flex-direction: row;
+}
+
+.custom-bottom {
+  line-height: 1.15;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", Segoe UI Symbol;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  /* color: var(--color-text-secondary); */
+  font-size: 0.625rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
